@@ -1,0 +1,5 @@
+<p>child works!</p>
+<ul *ngFor="let item of listOfItems; let i = index">
+    <li>{{item}}</li>
+    <button (click)="removeItem(i)">Remove</button>
+  </ul>

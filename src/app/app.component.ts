@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'exercise1';
+  items:string[] = ["item1","item2","item3"];
+
+  removeItem($event:number){
+    this.items.splice($event,1);
+    window.alert('this item will be deleted, are you sure?')
+  }
 }
